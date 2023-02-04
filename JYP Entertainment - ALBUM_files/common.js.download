@@ -1,0 +1,47 @@
+$(function(){
+    // header txt
+    JSLIB.headerTxt();
+    // 20221018 body lang type
+    JSLIB.langTxt();
+    
+    // scroll position
+    history.scrollRestoration = "manual";
+
+    // header script
+    // common language list open/close
+    $(".lang_menu").click(function () {
+        JSLIB.clickLang();
+    });
+
+    // common family list open/close
+    $(".fam_menu").click(function () {
+        JSLIB.clickFam();
+    });
+
+    $(".fam_type").click(function () {
+        JSLIB.clickMFam();
+    });
+
+    // common menu open/close
+    $(".menu_ico").click(function(){
+        JSLIB.openMenu();
+    });
+
+    // top button scroll top
+    $(".top_btn").click(function(){
+        JSLIB.pageTop();
+    });
+
+    // top button show / hide
+    $(window).scroll(function() {
+        JSLIB.topBtnShow();
+    });
+
+    $(window).resize(function(){
+        // common mob header resize
+        JSLIB.headerResizeCont();
+    });
+});
+document.cookie = "safeCookie1=foo; SameSite=Lax"; 
+document.cookie = "safeCookie2=foo"; 
+document.cookie = "crossCookie=bar; SameSite=None; Secure";
