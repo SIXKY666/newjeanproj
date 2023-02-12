@@ -18,6 +18,10 @@ a {
     color: black;
 }
 
+li a {
+    color: rgba(238, 174, 202, 1);
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -48,13 +52,16 @@ header {
     justify-content: center;
 }
 
-.nav-icon-5 {
-    width: 35px;
-    height: 30px;
-    margin: 10px 10px;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
+.menu {
+    position: absolute;
+    background-color: aliceblue;
+    width: 40%;
+    height: 100%;
+}
+
+.menu-nav ul {
+    padding: 0;
+    margin: 10px;
 }
 
 nav {
@@ -91,11 +98,10 @@ nav {
 }
 
 h1 {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: #ff93b5;
+    background: linear-gradient(to right, #FEA1BF 30%, rgba(148, 187, 233, 1) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 
@@ -380,14 +386,6 @@ iframe {
 @media screen and (max-width:400px) {
     .container {
         width: 100%;
-    }
-
-    .navbar1 {
-        width: 100%;
-    }
-
-    .nav1 {
-        border-top: 2px solid;
     }
 
     header h1 {
